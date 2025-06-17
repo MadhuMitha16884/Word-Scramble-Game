@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Word Scramble Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Scramble Game</h1>
+    <p id="word"></p>
+    <input type="text" id="guess" placeholder="Your guess" />
+    <br />
+    <button id="checkBtn" onclick="checkGuess()">Check</button>
+    <button id="nextBtn" onclick="newWord()" style="display: none;">Next</button>
+    <button id="tryAgainBtn" onclick="resetTry()" style="display: none;">Try Again</button>
+    <p id="result"></p>
+    <p id="score">Score: 0</p>
+    <canvas id="confetti"></canvas>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
